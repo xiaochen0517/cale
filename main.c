@@ -1,5 +1,4 @@
 #include <ctype.h>
-#include <inttypes.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -131,7 +130,6 @@ void check_date_info(const struct Date *date) {
 }
 
 int main(const int argc, char *argv[]) {
-
     if (argc != 1 && argc != 3) {
         perror("Usage: cale <year> <month> or cale.");
         exit(1);
